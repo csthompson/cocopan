@@ -25,6 +25,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Cocopan
    </div>
+   <div id="projectbrief">Workflow engine</div>
   </td>
  </tr>
  </tbody>
@@ -93,7 +94,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Workflow states.  
+<p><a class="el" href="classmain_1_1_workflow.html" title="Workflow data model. ">Workflow</a> states.  
  <a href="classmain_1_1_state.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -101,12 +102,33 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aacbb891da95994d68a8868b7673ab926"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1_state.html#aacbb891da95994d68a8868b7673ab926">__init__</a> (self, doc)</td></tr>
 <tr class="memdesc:aacbb891da95994d68a8868b7673ab926"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class Constructor.  <a href="#aacbb891da95994d68a8868b7673ab926">More...</a><br /></td></tr>
 <tr class="separator:aacbb891da95994d68a8868b7673ab926"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a023904ab310b53647d2a7cea2f736c22"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1_state.html#a023904ab310b53647d2a7cea2f736c22">save</a> (self)</td></tr>
-<tr class="memdesc:a023904ab310b53647d2a7cea2f736c22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create new adjacent state.  <a href="#a023904ab310b53647d2a7cea2f736c22">More...</a><br /></td></tr>
-<tr class="separator:a023904ab310b53647d2a7cea2f736c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1a28b634cd9719c4c35e842298d6591"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1_state.html#ab1a28b634cd9719c4c35e842298d6591">get_state_id</a> (self)</td></tr>
+<tr class="memdesc:ab1a28b634cd9719c4c35e842298d6591"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="classmain_1_1_state.html" title="Workflow states. ">State</a>'s document _id.  <a href="#ab1a28b634cd9719c4c35e842298d6591">More...</a><br /></td></tr>
+<tr class="separator:ab1a28b634cd9719c4c35e842298d6591"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af568033ce6715a39af545ac50b7eed6d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1_state.html#af568033ce6715a39af545ac50b7eed6d">set_name</a> (self, name)</td></tr>
+<tr class="memdesc:af568033ce6715a39af545ac50b7eed6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the friendly name of the state.  <a href="#af568033ce6715a39af545ac50b7eed6d">More...</a><br /></td></tr>
+<tr class="separator:af568033ce6715a39af545ac50b7eed6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bf392c555bcb78bbfb9c8e5da231b43"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1_state.html#a3bf392c555bcb78bbfb9c8e5da231b43">get_field</a> (self, key)</td></tr>
+<tr class="memdesc:a3bf392c555bcb78bbfb9c8e5da231b43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get field from state.  <a href="#a3bf392c555bcb78bbfb9c8e5da231b43">More...</a><br /></td></tr>
+<tr class="separator:a3bf392c555bcb78bbfb9c8e5da231b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7754ebb0b762942c2038b06f1df2381"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1_state.html#ab7754ebb0b762942c2038b06f1df2381">get_transitions</a> (self)</td></tr>
+<tr class="memdesc:ab7754ebb0b762942c2038b06f1df2381"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get transitions.  <a href="#ab7754ebb0b762942c2038b06f1df2381">More...</a><br /></td></tr>
+<tr class="separator:ab7754ebb0b762942c2038b06f1df2381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abedfeb6b751dfccd598b0814143a6f09"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1_state.html#abedfeb6b751dfccd598b0814143a6f09">add_transition</a> (self, end_state)</td></tr>
+<tr class="memdesc:abedfeb6b751dfccd598b0814143a6f09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add transition.  <a href="#abedfeb6b751dfccd598b0814143a6f09">More...</a><br /></td></tr>
+<tr class="separator:abedfeb6b751dfccd598b0814143a6f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5503f0a3ccb9e995e3ad07bc219f9cfa"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1_state.html#a5503f0a3ccb9e995e3ad07bc219f9cfa">transition</a> (self, next_state)</td></tr>
+<tr class="memdesc:a5503f0a3ccb9e995e3ad07bc219f9cfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify a state transition.  <a href="#a5503f0a3ccb9e995e3ad07bc219f9cfa">More...</a><br /></td></tr>
+<tr class="separator:a5503f0a3ccb9e995e3ad07bc219f9cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af824d830f2a410503ffca9fdd267a1c6"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1_state.html#af824d830f2a410503ffca9fdd267a1c6">to_dictionary</a> (self)</td></tr>
+<tr class="memdesc:af824d830f2a410503ffca9fdd267a1c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the state as a dictionary to persist to MongoDB.  <a href="#af824d830f2a410503ffca9fdd267a1c6">More...</a><br /></td></tr>
+<tr class="separator:af824d830f2a410503ffca9fdd267a1c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79935eabe0c629afbfebb3e66cedc985"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1_state.html#a79935eabe0c629afbfebb3e66cedc985">from_dictionary</a> (self, dictionary)</td></tr>
+<tr class="memdesc:a79935eabe0c629afbfebb3e66cedc985"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dictionary to object.  <a href="#a79935eabe0c629afbfebb3e66cedc985">More...</a><br /></td></tr>
+<tr class="separator:a79935eabe0c629afbfebb3e66cedc985"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Workflow states. </p>
+<div class="textblock"><p><a class="el" href="classmain_1_1_workflow.html" title="Workflow data model. ">Workflow</a> states. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aacbb891da95994d68a8868b7673ab926"></a>
 <div class="memitem">
@@ -144,12 +166,118 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a023904ab310b53647d2a7cea2f736c22"></a>
+<a class="anchor" id="abedfeb6b751dfccd598b0814143a6f09"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">def main.State.save </td>
+          <td class="memname">def main.State.add_transition </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>end_state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add transition. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>The object pointer </td></tr>
+    <tr><td class="paramname"><a class="el" href="classmain_1_1_state.html" title="Workflow states. ">State</a></td><td>The transition to be added </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classmain_1_1_transition.html" title="Workflow transitions. ">Transition</a> The created transition </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a79935eabe0c629afbfebb3e66cedc985"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def main.State.from_dictionary </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>dictionary</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dictionary to object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dict</td><td>Dictionary representation of object from MongoDB </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3bf392c555bcb78bbfb9c8e5da231b43"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def main.State.get_field </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get field from state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>Key </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Value at key </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab1a28b634cd9719c4c35e842298d6591"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def main.State.get_state_id </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>self</em></td><td>)</td>
@@ -158,15 +286,135 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Create new adjacent state. </p>
+<p>Get the <a class="el" href="classmain_1_1_state.html" title="Workflow states. ">State</a>'s document _id. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="classmain_1_1_state.html" title="Workflow states. ">State</a></td><td>Persist the current state to MongoDB </td></tr>
     <tr><td class="paramname">self</td><td>The object pointer </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>bool True/False operation successful </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>string The document _id </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab7754ebb0b762942c2038b06f1df2381"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def main.State.get_transitions </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get transitions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>The object pointer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Dict of transitions </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af568033ce6715a39af545ac50b7eed6d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def main.State.set_name </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the friendly name of the state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>The object pointer </td></tr>
+    <tr><td class="paramname">string</td><td>The name for the state </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af824d830f2a410503ffca9fdd267a1c6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def main.State.to_dictionary </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the state as a dictionary to persist to MongoDB. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>The object pointer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>dict The <a class="el" href="classmain_1_1_state.html" title="Workflow states. ">State</a> as a dictionary </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5503f0a3ccb9e995e3ad07bc219f9cfa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def main.State.transition </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>next_state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Modify a state transition. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>The object pointer </td></tr>
+    <tr><td class="paramname"><a class="el" href="classmain_1_1_state.html" title="Workflow states. ">State</a></td><td>The next state in the transition </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Transitiion The transition to be modified </dd></dl>
 
 </div>
 </div>

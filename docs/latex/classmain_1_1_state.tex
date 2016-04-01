@@ -2,7 +2,7 @@
 \label{classmain_1_1_state}\index{main.\+State@{main.\+State}}
 
 
-Workflow states.  
+\hyperlink{classmain_1_1_workflow}{Workflow} states.  
 
 
 \subsection*{Public Member Functions}
@@ -10,12 +10,26 @@ Workflow states.
 \item 
 def \hyperlink{classmain_1_1_state_aacbb891da95994d68a8868b7673ab926}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, doc)
 \begin{DoxyCompactList}\small\item\em Class Constructor. \end{DoxyCompactList}\item 
-def \hyperlink{classmain_1_1_state_a023904ab310b53647d2a7cea2f736c22}{save} (self)
-\begin{DoxyCompactList}\small\item\em Create new adjacent state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+def \hyperlink{classmain_1_1_state_ab1a28b634cd9719c4c35e842298d6591}{get\+\_\+state\+\_\+id} (self)
+\begin{DoxyCompactList}\small\item\em Get the \hyperlink{classmain_1_1_state}{State}\textquotesingle{}s document \+\_\+id. \end{DoxyCompactList}\item 
+def \hyperlink{classmain_1_1_state_af568033ce6715a39af545ac50b7eed6d}{set\+\_\+name} (self, name)
+\begin{DoxyCompactList}\small\item\em Set the friendly name of the state. \end{DoxyCompactList}\item 
+def \hyperlink{classmain_1_1_state_a3bf392c555bcb78bbfb9c8e5da231b43}{get\+\_\+field} (self, key)
+\begin{DoxyCompactList}\small\item\em Get field from state. \end{DoxyCompactList}\item 
+def \hyperlink{classmain_1_1_state_ab7754ebb0b762942c2038b06f1df2381}{get\+\_\+transitions} (self)
+\begin{DoxyCompactList}\small\item\em Get transitions. \end{DoxyCompactList}\item 
+def \hyperlink{classmain_1_1_state_abedfeb6b751dfccd598b0814143a6f09}{add\+\_\+transition} (self, end\+\_\+state)
+\begin{DoxyCompactList}\small\item\em Add transition. \end{DoxyCompactList}\item 
+def \hyperlink{classmain_1_1_state_a5503f0a3ccb9e995e3ad07bc219f9cfa}{transition} (self, next\+\_\+state)
+\begin{DoxyCompactList}\small\item\em Modify a state transition. \end{DoxyCompactList}\item 
+def \hyperlink{classmain_1_1_state_af824d830f2a410503ffca9fdd267a1c6}{to\+\_\+dictionary} (self)
+\begin{DoxyCompactList}\small\item\em Get the state as a dictionary to persist to Mongo\+DB. \end{DoxyCompactList}\item 
+def \hyperlink{classmain_1_1_state_a79935eabe0c629afbfebb3e66cedc985}{from\+\_\+dictionary} (self, dictionary)
+\begin{DoxyCompactList}\small\item\em Dictionary to object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Workflow states. 
+\hyperlink{classmain_1_1_workflow}{Workflow} states. 
 
 \subsection{Constructor \& Destructor Documentation}
 \index{main\+::\+State@{main\+::\+State}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
@@ -41,26 +55,165 @@ None
 
 
 \subsection{Member Function Documentation}
-\index{main\+::\+State@{main\+::\+State}!save@{save}}
-\index{save@{save}!main\+::\+State@{main\+::\+State}}
-\subsubsection[{\texorpdfstring{save(self)}{save(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+State.\+save (
+\index{main\+::\+State@{main\+::\+State}!add\+\_\+transition@{add\+\_\+transition}}
+\index{add\+\_\+transition@{add\+\_\+transition}!main\+::\+State@{main\+::\+State}}
+\subsubsection[{\texorpdfstring{add\+\_\+transition(self, end\+\_\+state)}{add_transition(self, end_state)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+State.\+add\+\_\+transition (
 \begin{DoxyParamCaption}
-\item[{}]{self}
+\item[{}]{self, }
+\item[{}]{end\+\_\+state}
 \end{DoxyParamCaption}
-)}\hypertarget{classmain_1_1_state_a023904ab310b53647d2a7cea2f736c22}{}\label{classmain_1_1_state_a023904ab310b53647d2a7cea2f736c22}
+)}\hypertarget{classmain_1_1_state_abedfeb6b751dfccd598b0814143a6f09}{}\label{classmain_1_1_state_abedfeb6b751dfccd598b0814143a6f09}
 
 
-Create new adjacent state. 
+Add transition. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em \hyperlink{classmain_1_1_state}{State}} & Persist the current state to Mongo\+DB \\
+{\em self} & The object pointer \\
 \hline
+{\em \hyperlink{classmain_1_1_state}{State}} & The transition to be added \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classmain_1_1_transition}{Transition} The created transition 
+\end{DoxyReturn}
+\index{main\+::\+State@{main\+::\+State}!from\+\_\+dictionary@{from\+\_\+dictionary}}
+\index{from\+\_\+dictionary@{from\+\_\+dictionary}!main\+::\+State@{main\+::\+State}}
+\subsubsection[{\texorpdfstring{from\+\_\+dictionary(self, dictionary)}{from_dictionary(self, dictionary)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+State.\+from\+\_\+dictionary (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{dictionary}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_state_a79935eabe0c629afbfebb3e66cedc985}{}\label{classmain_1_1_state_a79935eabe0c629afbfebb3e66cedc985}
+
+
+Dictionary to object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dict} & Dictionary representation of object from Mongo\+DB \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\index{main\+::\+State@{main\+::\+State}!get\+\_\+field@{get\+\_\+field}}
+\index{get\+\_\+field@{get\+\_\+field}!main\+::\+State@{main\+::\+State}}
+\subsubsection[{\texorpdfstring{get\+\_\+field(self, key)}{get_field(self, key)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+State.\+get\+\_\+field (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{key}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_state_a3bf392c555bcb78bbfb9c8e5da231b43}{}\label{classmain_1_1_state_a3bf392c555bcb78bbfb9c8e5da231b43}
+
+
+Get field from state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Key \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Value at key 
+\end{DoxyReturn}
+\index{main\+::\+State@{main\+::\+State}!get\+\_\+state\+\_\+id@{get\+\_\+state\+\_\+id}}
+\index{get\+\_\+state\+\_\+id@{get\+\_\+state\+\_\+id}!main\+::\+State@{main\+::\+State}}
+\subsubsection[{\texorpdfstring{get\+\_\+state\+\_\+id(self)}{get_state_id(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+State.\+get\+\_\+state\+\_\+id (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_state_ab1a28b634cd9719c4c35e842298d6591}{}\label{classmain_1_1_state_ab1a28b634cd9719c4c35e842298d6591}
+
+
+Get the \hyperlink{classmain_1_1_state}{State}\textquotesingle{}s document \+\_\+id. 
+
+
+\begin{DoxyParams}{Parameters}
 {\em self} & The object pointer \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-bool True/\+False operation successful 
+string The document \+\_\+id 
+\end{DoxyReturn}
+\index{main\+::\+State@{main\+::\+State}!get\+\_\+transitions@{get\+\_\+transitions}}
+\index{get\+\_\+transitions@{get\+\_\+transitions}!main\+::\+State@{main\+::\+State}}
+\subsubsection[{\texorpdfstring{get\+\_\+transitions(self)}{get_transitions(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+State.\+get\+\_\+transitions (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_state_ab7754ebb0b762942c2038b06f1df2381}{}\label{classmain_1_1_state_ab7754ebb0b762942c2038b06f1df2381}
+
+
+Get transitions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Dict of transitions 
+\end{DoxyReturn}
+\index{main\+::\+State@{main\+::\+State}!set\+\_\+name@{set\+\_\+name}}
+\index{set\+\_\+name@{set\+\_\+name}!main\+::\+State@{main\+::\+State}}
+\subsubsection[{\texorpdfstring{set\+\_\+name(self, name)}{set_name(self, name)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+State.\+set\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_state_af568033ce6715a39af545ac50b7eed6d}{}\label{classmain_1_1_state_af568033ce6715a39af545ac50b7eed6d}
+
+
+Set the friendly name of the state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer \\
+\hline
+{\em string} & The name for the state \\
+\hline
+\end{DoxyParams}
+\index{main\+::\+State@{main\+::\+State}!to\+\_\+dictionary@{to\+\_\+dictionary}}
+\index{to\+\_\+dictionary@{to\+\_\+dictionary}!main\+::\+State@{main\+::\+State}}
+\subsubsection[{\texorpdfstring{to\+\_\+dictionary(self)}{to_dictionary(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+State.\+to\+\_\+dictionary (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_state_af824d830f2a410503ffca9fdd267a1c6}{}\label{classmain_1_1_state_af824d830f2a410503ffca9fdd267a1c6}
+
+
+Get the state as a dictionary to persist to Mongo\+DB. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+dict The \hyperlink{classmain_1_1_state}{State} as a dictionary 
+\end{DoxyReturn}
+\index{main\+::\+State@{main\+::\+State}!transition@{transition}}
+\index{transition@{transition}!main\+::\+State@{main\+::\+State}}
+\subsubsection[{\texorpdfstring{transition(self, next\+\_\+state)}{transition(self, next_state)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+State.\+transition (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{next\+\_\+state}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_state_a5503f0a3ccb9e995e3ad07bc219f9cfa}{}\label{classmain_1_1_state_a5503f0a3ccb9e995e3ad07bc219f9cfa}
+
+
+Modify a state transition. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer \\
+\hline
+{\em \hyperlink{classmain_1_1_state}{State}} & The next state in the transition \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Transitiion The transition to be modified 
 \end{DoxyReturn}
 
 

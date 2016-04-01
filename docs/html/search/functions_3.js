@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['save',['save',['../classmain_1_1_state.html#a023904ab310b53647d2a7cea2f736c22',1,'main::State']]],
-  ['set_5fdb_5fname',['set_db_name',['../classmain_1_1_cocopan.html#ab82e9e88bac256826e750485a64645ae',1,'main::Cocopan']]],
-  ['set_5fobject_5fcollection',['set_object_collection',['../classmain_1_1_cocopan.html#af17aa6d762d380aa8e3e9d75f906df3b',1,'main::Cocopan']]],
-  ['set_5fstate_5fcollection',['set_state_collection',['../classmain_1_1_cocopan.html#a5a5b5a1bf8d0057b842e726a06fe8ecc',1,'main::Cocopan']]]
+  ['from_5fdictionary',['from_dictionary',['../classmain_1_1_transition.html#a452f094a9244b67189763a5839c72f23',1,'main.Transition.from_dictionary()'],['../classmain_1_1_state.html#a79935eabe0c629afbfebb3e66cedc985',1,'main.State.from_dictionary()'],['../classmain_1_1_object.html#af6e4dfd8b91828150a5f2d15ae441221',1,'main.Object.from_dictionary()'],['../classmain_1_1_workflow.html#ad562342bfd6b6228720c72c2931b0d0b',1,'main.Workflow.from_dictionary()']]]
 ];

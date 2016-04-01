@@ -2,7 +2,7 @@
 \label{classmain_1_1_cocopan}\index{main.\+Cocopan@{main.\+Cocopan}}
 
 
-Workflow engine.  
+\hyperlink{classmain_1_1_workflow}{Workflow} engine.  
 
 
 \subsection*{Public Member Functions}
@@ -10,14 +10,26 @@ Workflow engine.
 \item 
 def \hyperlink{classmain_1_1_cocopan_a50aabe1c07574b61eb293272f1758bdb}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, connection=None)
 \begin{DoxyCompactList}\small\item\em Class constructor. \end{DoxyCompactList}\item 
+def \hyperlink{classmain_1_1_cocopan_ad8123cb7d7707b1d810fbdb6241019b5}{load} (self, workflow\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Load existing workflow from Mongo\+DB. \end{DoxyCompactList}\item 
 def \hyperlink{classmain_1_1_cocopan_ab82e9e88bac256826e750485a64645ae}{set\+\_\+db\+\_\+name} (self, database)
 \begin{DoxyCompactList}\small\item\em Set the Mongo\+DB database name. \end{DoxyCompactList}\item 
 def \hyperlink{classmain_1_1_cocopan_a5a5b5a1bf8d0057b842e726a06fe8ecc}{set\+\_\+state\+\_\+collection} (self, collection)
 \begin{DoxyCompactList}\small\item\em Set the Mongo\+DB collection that holds the states. \end{DoxyCompactList}\item 
 def \hyperlink{classmain_1_1_cocopan_af17aa6d762d380aa8e3e9d75f906df3b}{set\+\_\+object\+\_\+collection} (self, collection)
 \begin{DoxyCompactList}\small\item\em Set the Mongo\+DB collection that holds the objects. \end{DoxyCompactList}\item 
+def \hyperlink{classmain_1_1_cocopan_a636f9c9ee0425bdc1c4809d52c92fce5}{set\+\_\+workflow\+\_\+collection} (self, collection)
+\begin{DoxyCompactList}\small\item\em Set the Mongo\+DB collection that holds the workflow documents. \end{DoxyCompactList}\item 
 def \hyperlink{classmain_1_1_cocopan_a1caaa06dd31559d6b24ef8503e3f7013}{new\+\_\+state} (self)
-\begin{DoxyCompactList}\small\item\em Create a new workflow state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Create a new workflow state. \end{DoxyCompactList}\item 
+def \hyperlink{classmain_1_1_cocopan_a80ff2078aa4d0329f23afd68f095ecf0}{get\+\_\+state} (self, state\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Retrive a state from the workflow. \end{DoxyCompactList}\item 
+def \hyperlink{classmain_1_1_cocopan_abcf9b046d219915b9e12109cb4030bf1}{new\+\_\+object} (self, start\+\_\+state)
+\begin{DoxyCompactList}\small\item\em Create the object that will be tracked through the workflow. \end{DoxyCompactList}\item 
+def \hyperlink{classmain_1_1_cocopan_aaada41d82a8822c4ced8b0bbb2fd8908}{save} (self)
+\begin{DoxyCompactList}\small\item\em Persist changes to Mongo. \end{DoxyCompactList}\item 
+def \hyperlink{classmain_1_1_cocopan_a9f32332006de37c15ecefb69635db519}{visualize\+\_\+it} (self)
+\begin{DoxyCompactList}\small\item\em Visualize the workflow using Graphviz. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -27,7 +39,7 @@ def \hyperlink{classmain_1_1_cocopan_a1caaa06dd31559d6b24ef8503e3f7013}{new\+\_\
 
 
 \subsection{Detailed Description}
-Workflow engine. 
+\hyperlink{classmain_1_1_workflow}{Workflow} engine. 
 
 \subsection{Constructor \& Destructor Documentation}
 \index{main\+::\+Cocopan@{main\+::\+Cocopan}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
@@ -50,6 +62,69 @@ Class constructor.
 
 
 \subsection{Member Function Documentation}
+\index{main\+::\+Cocopan@{main\+::\+Cocopan}!get\+\_\+state@{get\+\_\+state}}
+\index{get\+\_\+state@{get\+\_\+state}!main\+::\+Cocopan@{main\+::\+Cocopan}}
+\subsubsection[{\texorpdfstring{get\+\_\+state(self, state\+\_\+id)}{get_state(self, state_id)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+Cocopan.\+get\+\_\+state (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{state\+\_\+id}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_cocopan_a80ff2078aa4d0329f23afd68f095ecf0}{}\label{classmain_1_1_cocopan_a80ff2078aa4d0329f23afd68f095ecf0}
+
+
+Retrive a state from the workflow. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer \\
+\hline
+{\em string} & The \+\_\+id of the state (Mondo\+DB ID) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classmain_1_1_state}{State} The \hyperlink{classmain_1_1_state}{State} object 
+\end{DoxyReturn}
+\index{main\+::\+Cocopan@{main\+::\+Cocopan}!load@{load}}
+\index{load@{load}!main\+::\+Cocopan@{main\+::\+Cocopan}}
+\subsubsection[{\texorpdfstring{load(self, workflow\+\_\+id)}{load(self, workflow_id)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+Cocopan.\+load (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{workflow\+\_\+id}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_cocopan_ad8123cb7d7707b1d810fbdb6241019b5}{}\label{classmain_1_1_cocopan_ad8123cb7d7707b1d810fbdb6241019b5}
+
+
+Load existing workflow from Mongo\+DB. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer \\
+\hline
+{\em string} & The workflow identifier \\
+\hline
+\end{DoxyParams}
+\index{main\+::\+Cocopan@{main\+::\+Cocopan}!new\+\_\+object@{new\+\_\+object}}
+\index{new\+\_\+object@{new\+\_\+object}!main\+::\+Cocopan@{main\+::\+Cocopan}}
+\subsubsection[{\texorpdfstring{new\+\_\+object(self, start\+\_\+state)}{new_object(self, start_state)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+Cocopan.\+new\+\_\+object (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{start\+\_\+state}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_cocopan_abcf9b046d219915b9e12109cb4030bf1}{}\label{classmain_1_1_cocopan_abcf9b046d219915b9e12109cb4030bf1}
+
+
+Create the object that will be tracked through the workflow. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer \\
+\hline
+{\em string} & The ID of the start state \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classmain_1_1_object}{Object} Return the created object 
+\end{DoxyReturn}
 \index{main\+::\+Cocopan@{main\+::\+Cocopan}!new\+\_\+state@{new\+\_\+state}}
 \index{new\+\_\+state@{new\+\_\+state}!main\+::\+Cocopan@{main\+::\+Cocopan}}
 \subsubsection[{\texorpdfstring{new\+\_\+state(self)}{new_state(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+Cocopan.\+new\+\_\+state (
@@ -69,6 +144,22 @@ Create a new workflow state.
 \begin{DoxyReturn}{Returns}
 \hyperlink{classmain_1_1_state}{State} Return the created state 
 \end{DoxyReturn}
+\index{main\+::\+Cocopan@{main\+::\+Cocopan}!save@{save}}
+\index{save@{save}!main\+::\+Cocopan@{main\+::\+Cocopan}}
+\subsubsection[{\texorpdfstring{save(self)}{save(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+Cocopan.\+save (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_cocopan_aaada41d82a8822c4ced8b0bbb2fd8908}{}\label{classmain_1_1_cocopan_aaada41d82a8822c4ced8b0bbb2fd8908}
+
+
+Persist changes to Mongo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer \\
+\hline
+\end{DoxyParams}
 \index{main\+::\+Cocopan@{main\+::\+Cocopan}!set\+\_\+db\+\_\+name@{set\+\_\+db\+\_\+name}}
 \index{set\+\_\+db\+\_\+name@{set\+\_\+db\+\_\+name}!main\+::\+Cocopan@{main\+::\+Cocopan}}
 \subsubsection[{\texorpdfstring{set\+\_\+db\+\_\+name(self, database)}{set_db_name(self, database)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+Cocopan.\+set\+\_\+db\+\_\+name (
@@ -120,6 +211,42 @@ Set the Mongo\+DB collection that holds the states.
 {\em string} & Collection name that holds the states \\
 \hline
 \end{DoxyParams}
+\index{main\+::\+Cocopan@{main\+::\+Cocopan}!set\+\_\+workflow\+\_\+collection@{set\+\_\+workflow\+\_\+collection}}
+\index{set\+\_\+workflow\+\_\+collection@{set\+\_\+workflow\+\_\+collection}!main\+::\+Cocopan@{main\+::\+Cocopan}}
+\subsubsection[{\texorpdfstring{set\+\_\+workflow\+\_\+collection(self, collection)}{set_workflow_collection(self, collection)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+Cocopan.\+set\+\_\+workflow\+\_\+collection (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{collection}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_cocopan_a636f9c9ee0425bdc1c4809d52c92fce5}{}\label{classmain_1_1_cocopan_a636f9c9ee0425bdc1c4809d52c92fce5}
+
+
+Set the Mongo\+DB collection that holds the workflow documents. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Collection name that holds the workflows \\
+\hline
+\end{DoxyParams}
+\index{main\+::\+Cocopan@{main\+::\+Cocopan}!visualize\+\_\+it@{visualize\+\_\+it}}
+\index{visualize\+\_\+it@{visualize\+\_\+it}!main\+::\+Cocopan@{main\+::\+Cocopan}}
+\subsubsection[{\texorpdfstring{visualize\+\_\+it(self)}{visualize_it(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+Cocopan.\+visualize\+\_\+it (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_cocopan_a9f32332006de37c15ecefb69635db519}{}\label{classmain_1_1_cocopan_a9f32332006de37c15ecefb69635db519}
+
+
+Visualize the workflow using Graphviz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

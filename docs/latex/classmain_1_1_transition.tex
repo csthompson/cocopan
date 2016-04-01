@@ -1,0 +1,276 @@
+\hypertarget{classmain_1_1_transition}{}\section{main.\+Transition Class Reference}
+\label{classmain_1_1_transition}\index{main.\+Transition@{main.\+Transition}}
+
+
+\hyperlink{classmain_1_1_workflow}{Workflow} transitions.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classmain_1_1_transition_a9c17de405e211cf1f3c2f05f584c4675}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, end\+\_\+state=None, transition\+\_\+dict=None)
+\begin{DoxyCompactList}\small\item\em Class constructor. \end{DoxyCompactList}\item 
+def \hyperlink{classmain_1_1_transition_aa804e95ea6a0d9a9566785f08a5931cc}{get\+\_\+end} (self)
+\begin{DoxyCompactList}\small\item\em Get the end state. \end{DoxyCompactList}\item 
+def \hyperlink{classmain_1_1_transition_a8dc53c69ee3381f037ec690f53e0fcd4}{set\+\_\+triggers} (self, triggers)
+\begin{DoxyCompactList}\small\item\em Set the trigger list. \end{DoxyCompactList}\item 
+def \hyperlink{classmain_1_1_transition_adb1b399d2905614b0792a6cbfe4f1a92}{trigger\+\_\+add} (self, key)
+\begin{DoxyCompactList}\small\item\em Create a new transition trigger. \end{DoxyCompactList}\item 
+def \hyperlink{classmain_1_1_transition_a8c4baad399a3c41f2f6d8c7c74f6db51}{trigger\+\_\+activate} (self, key)
+\begin{DoxyCompactList}\small\item\em Activate a trigger. \end{DoxyCompactList}\item 
+def \hyperlink{classmain_1_1_transition_acbbb9b31789620185ecfd420958457d5}{trigger\+\_\+status} (self, key)
+\begin{DoxyCompactList}\small\item\em Get the status of a trigger. \end{DoxyCompactList}\item 
+def \hyperlink{classmain_1_1_transition_a3d7379857189a9e58da009fc12bc0c04}{condition\+\_\+add} (self, trigger\+\_\+list)
+\begin{DoxyCompactList}\small\item\em Create a new combination of triggers that will activate the transition. \end{DoxyCompactList}\item 
+def \hyperlink{classmain_1_1_transition_a54517857aaf67b0ba159306854e9b91f}{get\+\_\+conditions} (self)
+\begin{DoxyCompactList}\small\item\em Get the conditions list. \end{DoxyCompactList}\item 
+def \hyperlink{classmain_1_1_transition_a48a94866892cd2c66cd7e0a6c0c63d82}{set\+\_\+conditions} (self, conditions)
+\begin{DoxyCompactList}\small\item\em Set the conditions list. \end{DoxyCompactList}\item 
+def \hyperlink{classmain_1_1_transition_aff9bd394ea25ea0eccb698001562514e}{is\+Activated} (self)
+\begin{DoxyCompactList}\small\item\em Check to see if the transition should activate. \end{DoxyCompactList}\item 
+def \hyperlink{classmain_1_1_transition_a101d38d21ff5a3a8179b85cd58c9d229}{to\+\_\+dictionary} (self)
+\begin{DoxyCompactList}\small\item\em Convert the transition object to a dictionary for Mongo\+DB. \end{DoxyCompactList}\item 
+def \hyperlink{classmain_1_1_transition_a452f094a9244b67189763a5839c72f23}{from\+\_\+dictionary} (self, transition\+\_\+dict)
+\begin{DoxyCompactList}\small\item\em Convert a transition dictionary to a transition object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classmain_1_1_workflow}{Workflow} transitions. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{main\+::\+Transition@{main\+::\+Transition}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!main\+::\+Transition@{main\+::\+Transition}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+(self, end\+\_\+state=\+None, transition\+\_\+dict=\+None)}{__init__(self, end_state=None, transition_dict=None)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+Transition.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{end\+\_\+state = {\ttfamily None}, }
+\item[{}]{transition\+\_\+dict = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_transition_a9c17de405e211cf1f3c2f05f584c4675}{}\label{classmain_1_1_transition_a9c17de405e211cf1f3c2f05f584c4675}
+
+
+Class constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer \\
+\hline
+{\em \hyperlink{classmain_1_1_state}{State}} & The starting state \\
+\hline
+{\em \hyperlink{classmain_1_1_state}{State}} & The ending state \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{main\+::\+Transition@{main\+::\+Transition}!condition\+\_\+add@{condition\+\_\+add}}
+\index{condition\+\_\+add@{condition\+\_\+add}!main\+::\+Transition@{main\+::\+Transition}}
+\subsubsection[{\texorpdfstring{condition\+\_\+add(self, trigger\+\_\+list)}{condition_add(self, trigger_list)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+Transition.\+condition\+\_\+add (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{trigger\+\_\+list}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_transition_a3d7379857189a9e58da009fc12bc0c04}{}\label{classmain_1_1_transition_a3d7379857189a9e58da009fc12bc0c04}
+
+
+Create a new combination of triggers that will activate the transition. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer \\
+\hline
+{\em list} & List of trigger keys to create the combinations \\
+\hline
+\end{DoxyParams}
+\index{main\+::\+Transition@{main\+::\+Transition}!from\+\_\+dictionary@{from\+\_\+dictionary}}
+\index{from\+\_\+dictionary@{from\+\_\+dictionary}!main\+::\+Transition@{main\+::\+Transition}}
+\subsubsection[{\texorpdfstring{from\+\_\+dictionary(self, transition\+\_\+dict)}{from_dictionary(self, transition_dict)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+Transition.\+from\+\_\+dictionary (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{transition\+\_\+dict}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_transition_a452f094a9244b67189763a5839c72f23}{}\label{classmain_1_1_transition_a452f094a9244b67189763a5839c72f23}
+
+
+Convert a transition dictionary to a transition object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer \\
+\hline
+{\em dict} & The transition dictionary \\
+\hline
+\end{DoxyParams}
+\index{main\+::\+Transition@{main\+::\+Transition}!get\+\_\+conditions@{get\+\_\+conditions}}
+\index{get\+\_\+conditions@{get\+\_\+conditions}!main\+::\+Transition@{main\+::\+Transition}}
+\subsubsection[{\texorpdfstring{get\+\_\+conditions(self)}{get_conditions(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+Transition.\+get\+\_\+conditions (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_transition_a54517857aaf67b0ba159306854e9b91f}{}\label{classmain_1_1_transition_a54517857aaf67b0ba159306854e9b91f}
+
+
+Get the conditions list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer \\
+\hline
+\end{DoxyParams}
+\index{main\+::\+Transition@{main\+::\+Transition}!get\+\_\+end@{get\+\_\+end}}
+\index{get\+\_\+end@{get\+\_\+end}!main\+::\+Transition@{main\+::\+Transition}}
+\subsubsection[{\texorpdfstring{get\+\_\+end(self)}{get_end(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+Transition.\+get\+\_\+end (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_transition_aa804e95ea6a0d9a9566785f08a5931cc}{}\label{classmain_1_1_transition_aa804e95ea6a0d9a9566785f08a5931cc}
+
+
+Get the end state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer \\
+\hline
+\end{DoxyParams}
+\index{main\+::\+Transition@{main\+::\+Transition}!is\+Activated@{is\+Activated}}
+\index{is\+Activated@{is\+Activated}!main\+::\+Transition@{main\+::\+Transition}}
+\subsubsection[{\texorpdfstring{is\+Activated(self)}{isActivated(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+Transition.\+is\+Activated (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_transition_aff9bd394ea25ea0eccb698001562514e}{}\label{classmain_1_1_transition_aff9bd394ea25ea0eccb698001562514e}
+
+
+Check to see if the transition should activate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True/\+False if transition should activate 
+\end{DoxyReturn}
+\index{main\+::\+Transition@{main\+::\+Transition}!set\+\_\+conditions@{set\+\_\+conditions}}
+\index{set\+\_\+conditions@{set\+\_\+conditions}!main\+::\+Transition@{main\+::\+Transition}}
+\subsubsection[{\texorpdfstring{set\+\_\+conditions(self, conditions)}{set_conditions(self, conditions)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+Transition.\+set\+\_\+conditions (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{conditions}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_transition_a48a94866892cd2c66cd7e0a6c0c63d82}{}\label{classmain_1_1_transition_a48a94866892cd2c66cd7e0a6c0c63d82}
+
+
+Set the conditions list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer \\
+\hline
+{\em list} & The conditions list \\
+\hline
+\end{DoxyParams}
+\index{main\+::\+Transition@{main\+::\+Transition}!set\+\_\+triggers@{set\+\_\+triggers}}
+\index{set\+\_\+triggers@{set\+\_\+triggers}!main\+::\+Transition@{main\+::\+Transition}}
+\subsubsection[{\texorpdfstring{set\+\_\+triggers(self, triggers)}{set_triggers(self, triggers)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+Transition.\+set\+\_\+triggers (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{triggers}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_transition_a8dc53c69ee3381f037ec690f53e0fcd4}{}\label{classmain_1_1_transition_a8dc53c69ee3381f037ec690f53e0fcd4}
+
+
+Set the trigger list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer \\
+\hline
+{\em list} & The trigger list \\
+\hline
+\end{DoxyParams}
+\index{main\+::\+Transition@{main\+::\+Transition}!to\+\_\+dictionary@{to\+\_\+dictionary}}
+\index{to\+\_\+dictionary@{to\+\_\+dictionary}!main\+::\+Transition@{main\+::\+Transition}}
+\subsubsection[{\texorpdfstring{to\+\_\+dictionary(self)}{to_dictionary(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+Transition.\+to\+\_\+dictionary (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_transition_a101d38d21ff5a3a8179b85cd58c9d229}{}\label{classmain_1_1_transition_a101d38d21ff5a3a8179b85cd58c9d229}
+
+
+Convert the transition object to a dictionary for Mongo\+DB. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+dict Dictionary representing the transition 
+\end{DoxyReturn}
+\index{main\+::\+Transition@{main\+::\+Transition}!trigger\+\_\+activate@{trigger\+\_\+activate}}
+\index{trigger\+\_\+activate@{trigger\+\_\+activate}!main\+::\+Transition@{main\+::\+Transition}}
+\subsubsection[{\texorpdfstring{trigger\+\_\+activate(self, key)}{trigger_activate(self, key)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+Transition.\+trigger\+\_\+activate (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{key}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_transition_a8c4baad399a3c41f2f6d8c7c74f6db51}{}\label{classmain_1_1_transition_a8c4baad399a3c41f2f6d8c7c74f6db51}
+
+
+Activate a trigger. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer \\
+\hline
+{\em string} & The trigger key \\
+\hline
+\end{DoxyParams}
+\index{main\+::\+Transition@{main\+::\+Transition}!trigger\+\_\+add@{trigger\+\_\+add}}
+\index{trigger\+\_\+add@{trigger\+\_\+add}!main\+::\+Transition@{main\+::\+Transition}}
+\subsubsection[{\texorpdfstring{trigger\+\_\+add(self, key)}{trigger_add(self, key)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+Transition.\+trigger\+\_\+add (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{key}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_transition_adb1b399d2905614b0792a6cbfe4f1a92}{}\label{classmain_1_1_transition_adb1b399d2905614b0792a6cbfe4f1a92}
+
+
+Create a new transition trigger. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer \\
+\hline
+{\em string} & Unique trigger key \\
+\hline
+\end{DoxyParams}
+\index{main\+::\+Transition@{main\+::\+Transition}!trigger\+\_\+status@{trigger\+\_\+status}}
+\index{trigger\+\_\+status@{trigger\+\_\+status}!main\+::\+Transition@{main\+::\+Transition}}
+\subsubsection[{\texorpdfstring{trigger\+\_\+status(self, key)}{trigger_status(self, key)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+Transition.\+trigger\+\_\+status (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{key}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_transition_acbbb9b31789620185ecfd420958457d5}{}\label{classmain_1_1_transition_acbbb9b31789620185ecfd420958457d5}
+
+
+Get the status of a trigger. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer \\
+\hline
+{\em string} & The trigger key \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool The trigger status (activated or not) 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main.\+py\end{DoxyCompactItemize}

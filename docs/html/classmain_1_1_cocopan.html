@@ -25,6 +25,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Cocopan
    </div>
+   <div id="projectbrief">Workflow engine</div>
   </td>
  </tr>
  </tbody>
@@ -94,7 +95,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Workflow engine.  
+<p><a class="el" href="classmain_1_1_workflow.html" title="Workflow data model. ">Workflow</a> engine.  
  <a href="classmain_1_1_cocopan.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -102,6 +103,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a50aabe1c07574b61eb293272f1758bdb"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1_cocopan.html#a50aabe1c07574b61eb293272f1758bdb">__init__</a> (self, connection=None)</td></tr>
 <tr class="memdesc:a50aabe1c07574b61eb293272f1758bdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class constructor.  <a href="#a50aabe1c07574b61eb293272f1758bdb">More...</a><br /></td></tr>
 <tr class="separator:a50aabe1c07574b61eb293272f1758bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8123cb7d7707b1d810fbdb6241019b5"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1_cocopan.html#ad8123cb7d7707b1d810fbdb6241019b5">load</a> (self, workflow_id)</td></tr>
+<tr class="memdesc:ad8123cb7d7707b1d810fbdb6241019b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load existing workflow from MongoDB.  <a href="#ad8123cb7d7707b1d810fbdb6241019b5">More...</a><br /></td></tr>
+<tr class="separator:ad8123cb7d7707b1d810fbdb6241019b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab82e9e88bac256826e750485a64645ae"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1_cocopan.html#ab82e9e88bac256826e750485a64645ae">set_db_name</a> (self, database)</td></tr>
 <tr class="memdesc:ab82e9e88bac256826e750485a64645ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the MongoDB database name.  <a href="#ab82e9e88bac256826e750485a64645ae">More...</a><br /></td></tr>
 <tr class="separator:ab82e9e88bac256826e750485a64645ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -111,9 +115,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af17aa6d762d380aa8e3e9d75f906df3b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1_cocopan.html#af17aa6d762d380aa8e3e9d75f906df3b">set_object_collection</a> (self, collection)</td></tr>
 <tr class="memdesc:af17aa6d762d380aa8e3e9d75f906df3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the MongoDB collection that holds the objects.  <a href="#af17aa6d762d380aa8e3e9d75f906df3b">More...</a><br /></td></tr>
 <tr class="separator:af17aa6d762d380aa8e3e9d75f906df3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a636f9c9ee0425bdc1c4809d52c92fce5"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1_cocopan.html#a636f9c9ee0425bdc1c4809d52c92fce5">set_workflow_collection</a> (self, collection)</td></tr>
+<tr class="memdesc:a636f9c9ee0425bdc1c4809d52c92fce5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the MongoDB collection that holds the workflow documents.  <a href="#a636f9c9ee0425bdc1c4809d52c92fce5">More...</a><br /></td></tr>
+<tr class="separator:a636f9c9ee0425bdc1c4809d52c92fce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1caaa06dd31559d6b24ef8503e3f7013"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1_cocopan.html#a1caaa06dd31559d6b24ef8503e3f7013">new_state</a> (self)</td></tr>
 <tr class="memdesc:a1caaa06dd31559d6b24ef8503e3f7013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new workflow state.  <a href="#a1caaa06dd31559d6b24ef8503e3f7013">More...</a><br /></td></tr>
 <tr class="separator:a1caaa06dd31559d6b24ef8503e3f7013"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80ff2078aa4d0329f23afd68f095ecf0"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1_cocopan.html#a80ff2078aa4d0329f23afd68f095ecf0">get_state</a> (self, state_id)</td></tr>
+<tr class="memdesc:a80ff2078aa4d0329f23afd68f095ecf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrive a state from the workflow.  <a href="#a80ff2078aa4d0329f23afd68f095ecf0">More...</a><br /></td></tr>
+<tr class="separator:a80ff2078aa4d0329f23afd68f095ecf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcf9b046d219915b9e12109cb4030bf1"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1_cocopan.html#abcf9b046d219915b9e12109cb4030bf1">new_object</a> (self, start_state)</td></tr>
+<tr class="memdesc:abcf9b046d219915b9e12109cb4030bf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the object that will be tracked through the workflow.  <a href="#abcf9b046d219915b9e12109cb4030bf1">More...</a><br /></td></tr>
+<tr class="separator:abcf9b046d219915b9e12109cb4030bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaada41d82a8822c4ced8b0bbb2fd8908"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1_cocopan.html#aaada41d82a8822c4ced8b0bbb2fd8908">save</a> (self)</td></tr>
+<tr class="memdesc:aaada41d82a8822c4ced8b0bbb2fd8908"><td class="mdescLeft">&#160;</td><td class="mdescRight">Persist changes to Mongo.  <a href="#aaada41d82a8822c4ced8b0bbb2fd8908">More...</a><br /></td></tr>
+<tr class="separator:aaada41d82a8822c4ced8b0bbb2fd8908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f32332006de37c15ecefb69635db519"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1_cocopan.html#a9f32332006de37c15ecefb69635db519">visualize_it</a> (self)</td></tr>
+<tr class="memdesc:a9f32332006de37c15ecefb69635db519"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visualize the workflow using Graphviz.  <a href="#a9f32332006de37c15ecefb69635db519">More...</a><br /></td></tr>
+<tr class="separator:a9f32332006de37c15ecefb69635db519"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -123,7 +142,7 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:ae3c98cef0ee592633894874ad6d1a7ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Workflow engine. </p>
+<div class="textblock"><p><a class="el" href="classmain_1_1_workflow.html" title="Workflow data model. ">Workflow</a> engine. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a50aabe1c07574b61eb293272f1758bdb"></a>
 <div class="memitem">
@@ -160,6 +179,113 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a80ff2078aa4d0329f23afd68f095ecf0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def main.Cocopan.get_state </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>state_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrive a state from the workflow. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>The object pointer </td></tr>
+    <tr><td class="paramname">string</td><td>The _id of the state (MondoDB ID) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classmain_1_1_state.html" title="Workflow states. ">State</a> The <a class="el" href="classmain_1_1_state.html" title="Workflow states. ">State</a> object </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad8123cb7d7707b1d810fbdb6241019b5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def main.Cocopan.load </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>workflow_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load existing workflow from MongoDB. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>The object pointer </td></tr>
+    <tr><td class="paramname">string</td><td>The workflow identifier </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="abcf9b046d219915b9e12109cb4030bf1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def main.Cocopan.new_object </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>start_state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create the object that will be tracked through the workflow. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>The object pointer </td></tr>
+    <tr><td class="paramname">string</td><td>The ID of the start state </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classmain_1_1_object.html" title="Workflow objects (objects that move from state to state) ">Object</a> Return the created object </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a1caaa06dd31559d6b24ef8503e3f7013"></a>
 <div class="memitem">
 <div class="memproto">
@@ -182,6 +308,30 @@ Static Public Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classmain_1_1_state.html" title="Workflow states. ">State</a> Return the created state </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aaada41d82a8822c4ced8b0bbb2fd8908"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def main.Cocopan.save </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Persist changes to Mongo. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>The object pointer </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -284,6 +434,65 @@ Static Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="a636f9c9ee0425bdc1c4809d52c92fce5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def main.Cocopan.set_workflow_collection </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>collection</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the MongoDB collection that holds the workflow documents. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>Collection name that holds the workflows </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9f32332006de37c15ecefb69635db519"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def main.Cocopan.visualize_it </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Visualize the workflow using Graphviz. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>The object pointer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
 
 </div>
 </div>

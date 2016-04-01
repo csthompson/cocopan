@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['new_5fstate',['new_state',['../classmain_1_1_cocopan.html#a1caaa06dd31559d6b24ef8503e3f7013',1,'main::Cocopan']]]
+  ['database',['Database',['../classmain_1_1_database.html',1,'main']]],
+  ['db',['db',['../classmain_1_1_cocopan.html#ae3c98cef0ee592633894874ad6d1a7ac',1,'main::Cocopan']]]
 ];
