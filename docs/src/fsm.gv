@@ -1,0 +1,17 @@
+digraph finite_state_machine {
+rankdir=LR
+size="8,5"
+	node [shape=circle]
+	"56fdfa5d8940131b6fc38d08" [label=M1]
+		"56fdfa5d8940131b6fc38d08" -> "56fdfa5d8940131b6fc38d09" [label="[u'signature_advisor', u'signature_dean']"]
+	"56fdfa5d8940131b6fc38d09" [label=M2]
+		"56fdfa5d8940131b6fc38d09" -> "56fdfa5d8940131b6fc38d0a" [label="[u'test_completed', u'test_grade_accepted']"]
+		"56fdfa5d8940131b6fc38d09" -> "56fdfa5d8940131b6fc38d0a" [label="[u'test_exempted']"]
+	"56fdfa5d8940131b6fc38d0a" [label=M3]
+		"56fdfa5d8940131b6fc38d0a" -> "56fdfa5d8940131b6fc38d0b" [label="[u'assessment_soft_skills_complete', u'assessment_soft_skills_complete']"]
+		"56fdfa5d8940131b6fc38d0a" -> "56fdfa5d8940131b6fc38d0b" [label="[u'system_override']"]
+		"56fdfa5d8940131b6fc38d0a" -> "56fdfa5d8940131b6fc38d0c" [label="[u'career_change_decision', u'advisor_signature', u'dean_signature']"]
+		"56fdfa5d8940131b6fc38d0a" -> "56fdfa5d8940131b6fc38d0c" [label="[u'system_override']"]
+	"56fdfa5d8940131b6fc38d0b" [label=M4]
+	"56fdfa5d8940131b6fc38d0c" [label=M5]
+}
