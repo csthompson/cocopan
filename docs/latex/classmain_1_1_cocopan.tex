@@ -1,0 +1,127 @@
+\hypertarget{classmain_1_1_cocopan}{}\section{main.\+Cocopan Class Reference}
+\label{classmain_1_1_cocopan}\index{main.\+Cocopan@{main.\+Cocopan}}
+
+
+Workflow engine.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classmain_1_1_cocopan_a50aabe1c07574b61eb293272f1758bdb}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, connection=None)
+\begin{DoxyCompactList}\small\item\em Class constructor. \end{DoxyCompactList}\item 
+def \hyperlink{classmain_1_1_cocopan_ab82e9e88bac256826e750485a64645ae}{set\+\_\+db\+\_\+name} (self, database)
+\begin{DoxyCompactList}\small\item\em Set the Mongo\+DB database name. \end{DoxyCompactList}\item 
+def \hyperlink{classmain_1_1_cocopan_a5a5b5a1bf8d0057b842e726a06fe8ecc}{set\+\_\+state\+\_\+collection} (self, collection)
+\begin{DoxyCompactList}\small\item\em Set the Mongo\+DB collection that holds the states. \end{DoxyCompactList}\item 
+def \hyperlink{classmain_1_1_cocopan_af17aa6d762d380aa8e3e9d75f906df3b}{set\+\_\+object\+\_\+collection} (self, collection)
+\begin{DoxyCompactList}\small\item\em Set the Mongo\+DB collection that holds the objects. \end{DoxyCompactList}\item 
+def \hyperlink{classmain_1_1_cocopan_a1caaa06dd31559d6b24ef8503e3f7013}{new\+\_\+state} (self)
+\begin{DoxyCompactList}\small\item\em Create a new workflow state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmain_1_1_cocopan_ae3c98cef0ee592633894874ad6d1a7ac}{db} = None\hypertarget{classmain_1_1_cocopan_ae3c98cef0ee592633894874ad6d1a7ac}{}\label{classmain_1_1_cocopan_ae3c98cef0ee592633894874ad6d1a7ac}
+
+\begin{DoxyCompactList}\small\item\em Mongo\+DB database instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Workflow engine. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{main\+::\+Cocopan@{main\+::\+Cocopan}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!main\+::\+Cocopan@{main\+::\+Cocopan}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+(self, connection=\+None)}{__init__(self, connection=None)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+Cocopan.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{connection = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_cocopan_a50aabe1c07574b61eb293272f1758bdb}{}\label{classmain_1_1_cocopan_a50aabe1c07574b61eb293272f1758bdb}
+
+
+Class constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Mongo\+DB connection parameters \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{main\+::\+Cocopan@{main\+::\+Cocopan}!new\+\_\+state@{new\+\_\+state}}
+\index{new\+\_\+state@{new\+\_\+state}!main\+::\+Cocopan@{main\+::\+Cocopan}}
+\subsubsection[{\texorpdfstring{new\+\_\+state(self)}{new_state(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+Cocopan.\+new\+\_\+state (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_cocopan_a1caaa06dd31559d6b24ef8503e3f7013}{}\label{classmain_1_1_cocopan_a1caaa06dd31559d6b24ef8503e3f7013}
+
+
+Create a new workflow state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classmain_1_1_state}{State} Return the created state 
+\end{DoxyReturn}
+\index{main\+::\+Cocopan@{main\+::\+Cocopan}!set\+\_\+db\+\_\+name@{set\+\_\+db\+\_\+name}}
+\index{set\+\_\+db\+\_\+name@{set\+\_\+db\+\_\+name}!main\+::\+Cocopan@{main\+::\+Cocopan}}
+\subsubsection[{\texorpdfstring{set\+\_\+db\+\_\+name(self, database)}{set_db_name(self, database)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+Cocopan.\+set\+\_\+db\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{database}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_cocopan_ab82e9e88bac256826e750485a64645ae}{}\label{classmain_1_1_cocopan_ab82e9e88bac256826e750485a64645ae}
+
+
+Set the Mongo\+DB database name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Mongo\+DB database name \\
+\hline
+\end{DoxyParams}
+\index{main\+::\+Cocopan@{main\+::\+Cocopan}!set\+\_\+object\+\_\+collection@{set\+\_\+object\+\_\+collection}}
+\index{set\+\_\+object\+\_\+collection@{set\+\_\+object\+\_\+collection}!main\+::\+Cocopan@{main\+::\+Cocopan}}
+\subsubsection[{\texorpdfstring{set\+\_\+object\+\_\+collection(self, collection)}{set_object_collection(self, collection)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+Cocopan.\+set\+\_\+object\+\_\+collection (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{collection}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_cocopan_af17aa6d762d380aa8e3e9d75f906df3b}{}\label{classmain_1_1_cocopan_af17aa6d762d380aa8e3e9d75f906df3b}
+
+
+Set the Mongo\+DB collection that holds the objects. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Collection name that holds the objects \\
+\hline
+\end{DoxyParams}
+\index{main\+::\+Cocopan@{main\+::\+Cocopan}!set\+\_\+state\+\_\+collection@{set\+\_\+state\+\_\+collection}}
+\index{set\+\_\+state\+\_\+collection@{set\+\_\+state\+\_\+collection}!main\+::\+Cocopan@{main\+::\+Cocopan}}
+\subsubsection[{\texorpdfstring{set\+\_\+state\+\_\+collection(self, collection)}{set_state_collection(self, collection)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+Cocopan.\+set\+\_\+state\+\_\+collection (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{collection}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_cocopan_a5a5b5a1bf8d0057b842e726a06fe8ecc}{}\label{classmain_1_1_cocopan_a5a5b5a1bf8d0057b842e726a06fe8ecc}
+
+
+Set the Mongo\+DB collection that holds the states. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Collection name that holds the states \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main.\+py\end{DoxyCompactItemize}
