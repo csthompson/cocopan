@@ -61,6 +61,13 @@ class Transition:
 		# Add the trigger to the dictionary and make it false
 		self._triggers[key] = False
 
+	## Remove a transition trigger
+	# @param self The object pointer
+	# @param string The trigger key
+	def trigger_remove(self, key):
+		#Delete the trigger from the dictionary
+		del self._triggers[key]
+
 	## Activate a trigger
 	# @param self The object pointer
 	# @param string The trigger key
@@ -81,6 +88,12 @@ class Transition:
 	def condition_add(self, trigger_list):
 		# Add the trigger list to the combinations
 		self._conditions.append(trigger_list)
+
+	## Remove a trigger combination
+	# @param self The object pointer
+	# @param int The index of the condition to remove
+	def condition_remove(self, index):
+		del self._conditions[index]
 
 	## Get the conditions list
 	# @param self The object pointer
@@ -198,12 +211,19 @@ class State:
 		#Return a pointer to the craeated transition object
 		return self._transitions.get(end_state.get_state_id())
 
+	## Remove a transition
+	# @param self The object pointer
+	# @param State The transition to be removed
+	def remove_transition(self, end_state):
+
+		del self._transitions[end_state]
+
 	## Modify a state transition
 	# @param self The object pointer
-	# @param State The next state in the transition
+	# @param string The id of the next state
 	# @return Transitiion The transition to be modified
-	def transition(self, next_state):
-		return self._transitions.get(next_state.get_state_id())
+	def transition(self, next_state_id):
+		return self._transitions.get(next_state_id)
 
 
 
@@ -501,14 +521,15 @@ class Cocopan:
 
 	## Create a new workflow state
 	# @param self The object pointer
+	# @param string A unique identifier for the state
 	# @return State Return the created state
-	def new_state(self):
+	def new_state(self, state_id):
 		# Get a connection instance to MongoDB
 		conn = self.db.connect(self._db_name)
 		# Get an instance of the states collection in MongoDB
 		state_collection = conn[self._states_collection]
 		#Create a blank document in the states collection and get the document ID back
-		result = state_collection.insert_one({})
+		result = state_collection.insert_one({"_id": state_id})
 		#Get the _id of the document
 		doc_id = result.inserted_id
 		#Get the document as a dictionary
@@ -643,23 +664,27 @@ workflow.set_db_name("test10")
 workflow.set_state_collection("states")
 workflow.set_object_collection("objects")
 workflow.set_workflow_collection("workflowss")
-if workflow.load("test_test6"):
+if workflow.load("test_test8"):
+	#workflow.get_state("m1").remove_transition("m2")
+	workflow.get_state("m1").transition("m2").condition_remove(1)
+	workflow.get_state("m1").transition("m2").condition_remove(0)
 	workflow.visualize_it()
+	#workflow.save()
 else:
 	#M1 state
-	state1 = workflow.new_state()
+	state1 = workflow.new_state("m1")
 	state1.set_name("M1")
 	#M2 state
-	state2 = workflow.new_state()
+	state2 = workflow.new_state("m2")
 	state2.set_name("M2")
 	#M3 state
-	state3 = workflow.new_state()
+	state3 = workflow.new_state("m3")
 	state3.set_name("M3")
 	#M4 state
-	state4 = workflow.new_state()
+	state4 = workflow.new_state("m4")
 	state4.set_name("M4")
 	#M5 state
-	state5 = workflow.new_state()
+	state5 = workflow.new_state("m5")
 	state5.set_name("M5")
 
 	workflow.new_object(state1)
