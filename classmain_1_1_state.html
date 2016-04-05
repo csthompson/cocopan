@@ -22,6 +22,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="cocopan-logo-01.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Cocopan
    </div>
@@ -117,9 +118,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abedfeb6b751dfccd598b0814143a6f09"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1_state.html#abedfeb6b751dfccd598b0814143a6f09">add_transition</a> (self, end_state)</td></tr>
 <tr class="memdesc:abedfeb6b751dfccd598b0814143a6f09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add transition.  <a href="#abedfeb6b751dfccd598b0814143a6f09">More...</a><br /></td></tr>
 <tr class="separator:abedfeb6b751dfccd598b0814143a6f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5503f0a3ccb9e995e3ad07bc219f9cfa"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1_state.html#a5503f0a3ccb9e995e3ad07bc219f9cfa">transition</a> (self, next_state)</td></tr>
-<tr class="memdesc:a5503f0a3ccb9e995e3ad07bc219f9cfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify a state transition.  <a href="#a5503f0a3ccb9e995e3ad07bc219f9cfa">More...</a><br /></td></tr>
-<tr class="separator:a5503f0a3ccb9e995e3ad07bc219f9cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2721d226e2902e47b6cd803604a4cd06"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1_state.html#a2721d226e2902e47b6cd803604a4cd06">remove_transition</a> (self, end_state)</td></tr>
+<tr class="memdesc:a2721d226e2902e47b6cd803604a4cd06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a transition.  <a href="#a2721d226e2902e47b6cd803604a4cd06">More...</a><br /></td></tr>
+<tr class="separator:a2721d226e2902e47b6cd803604a4cd06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1dc6103b5f39d0f94eefa182da5327c"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1_state.html#ab1dc6103b5f39d0f94eefa182da5327c">transition</a> (self, next_state_id)</td></tr>
+<tr class="memdesc:ab1dc6103b5f39d0f94eefa182da5327c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify a state transition.  <a href="#ab1dc6103b5f39d0f94eefa182da5327c">More...</a><br /></td></tr>
+<tr class="separator:ab1dc6103b5f39d0f94eefa182da5327c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af824d830f2a410503ffca9fdd267a1c6"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1_state.html#af824d830f2a410503ffca9fdd267a1c6">to_dictionary</a> (self)</td></tr>
 <tr class="memdesc:af824d830f2a410503ffca9fdd267a1c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the state as a dictionary to persist to MongoDB.  <a href="#af824d830f2a410503ffca9fdd267a1c6">More...</a><br /></td></tr>
 <tr class="separator:af824d830f2a410503ffca9fdd267a1c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -322,6 +326,41 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a2721d226e2902e47b6cd803604a4cd06"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def main.State.remove_transition </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>end_state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove a transition. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>The object pointer </td></tr>
+    <tr><td class="paramname"><a class="el" href="classmain_1_1_state.html" title="Workflow states. ">State</a></td><td>The transition to be removed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="af568033ce6715a39af545ac50b7eed6d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -382,7 +421,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5503f0a3ccb9e995e3ad07bc219f9cfa"></a>
+<a class="anchor" id="ab1dc6103b5f39d0f94eefa182da5327c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -396,7 +435,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>next_state</em>&#160;</td>
+          <td class="paramname"><em>next_state_id</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -410,7 +449,7 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">self</td><td>The object pointer </td></tr>
-    <tr><td class="paramname"><a class="el" href="classmain_1_1_state.html" title="Workflow states. ">State</a></td><td>The next state in the transition </td></tr>
+    <tr><td class="paramname">string</td><td>The id of the next state </td></tr>
   </table>
   </dd>
 </dl>

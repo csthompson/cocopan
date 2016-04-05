@@ -22,6 +22,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="cocopan-logo-01.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Cocopan
    </div>
@@ -111,6 +112,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adb1b399d2905614b0792a6cbfe4f1a92"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1_transition.html#adb1b399d2905614b0792a6cbfe4f1a92">trigger_add</a> (self, key)</td></tr>
 <tr class="memdesc:adb1b399d2905614b0792a6cbfe4f1a92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new transition trigger.  <a href="#adb1b399d2905614b0792a6cbfe4f1a92">More...</a><br /></td></tr>
 <tr class="separator:adb1b399d2905614b0792a6cbfe4f1a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5174ec35a1ddd024f7437941f1a7e8e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1_transition.html#ae5174ec35a1ddd024f7437941f1a7e8e">trigger_remove</a> (self, key)</td></tr>
+<tr class="memdesc:ae5174ec35a1ddd024f7437941f1a7e8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a transition trigger.  <a href="#ae5174ec35a1ddd024f7437941f1a7e8e">More...</a><br /></td></tr>
+<tr class="separator:ae5174ec35a1ddd024f7437941f1a7e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c4baad399a3c41f2f6d8c7c74f6db51"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1_transition.html#a8c4baad399a3c41f2f6d8c7c74f6db51">trigger_activate</a> (self, key)</td></tr>
 <tr class="memdesc:a8c4baad399a3c41f2f6d8c7c74f6db51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate a trigger.  <a href="#a8c4baad399a3c41f2f6d8c7c74f6db51">More...</a><br /></td></tr>
 <tr class="separator:a8c4baad399a3c41f2f6d8c7c74f6db51"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,6 +124,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3d7379857189a9e58da009fc12bc0c04"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1_transition.html#a3d7379857189a9e58da009fc12bc0c04">condition_add</a> (self, trigger_list)</td></tr>
 <tr class="memdesc:a3d7379857189a9e58da009fc12bc0c04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new combination of triggers that will activate the transition.  <a href="#a3d7379857189a9e58da009fc12bc0c04">More...</a><br /></td></tr>
 <tr class="separator:a3d7379857189a9e58da009fc12bc0c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a815821a5428745e7aca8eb6c31068605"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1_transition.html#a815821a5428745e7aca8eb6c31068605">condition_remove</a> (self, index)</td></tr>
+<tr class="memdesc:a815821a5428745e7aca8eb6c31068605"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a trigger combination.  <a href="#a815821a5428745e7aca8eb6c31068605">More...</a><br /></td></tr>
+<tr class="separator:a815821a5428745e7aca8eb6c31068605"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54517857aaf67b0ba159306854e9b91f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1_transition.html#a54517857aaf67b0ba159306854e9b91f">get_conditions</a> (self)</td></tr>
 <tr class="memdesc:a54517857aaf67b0ba159306854e9b91f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the conditions list.  <a href="#a54517857aaf67b0ba159306854e9b91f">More...</a><br /></td></tr>
 <tr class="separator:a54517857aaf67b0ba159306854e9b91f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -211,6 +218,41 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">self</td><td>The object pointer </td></tr>
     <tr><td class="paramname">list</td><td>List of trigger keys to create the combinations </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a815821a5428745e7aca8eb6c31068605"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def main.Transition.condition_remove </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove a trigger combination. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>The object pointer </td></tr>
+    <tr><td class="paramname">int</td><td>The index of the condition to remove </td></tr>
   </table>
   </dd>
 </dl>
@@ -484,6 +526,41 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">self</td><td>The object pointer </td></tr>
     <tr><td class="paramname">string</td><td>Unique trigger key </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae5174ec35a1ddd024f7437941f1a7e8e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def main.Transition.trigger_remove </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove a transition trigger. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>The object pointer </td></tr>
+    <tr><td class="paramname">string</td><td>The trigger key </td></tr>
   </table>
   </dd>
 </dl>
