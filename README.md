@@ -11,4 +11,6 @@ Workflow engine built on top of MongoDB
 
 ### Updating documentation
 1. Install doxygen
-2. 
+2. Checkout latest version of 'gh-pages' branch to /cocopan/html
+3. Run doxygen on the Doxyfile located in the cocopan directory
+4. Push to 'gh-pages' branch
