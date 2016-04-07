@@ -20,7 +20,9 @@ def \hyperlink{classmain_1_1_state_ab7754ebb0b762942c2038b06f1df2381}{get\+\_\+t
 \begin{DoxyCompactList}\small\item\em Get transitions. \end{DoxyCompactList}\item 
 def \hyperlink{classmain_1_1_state_abedfeb6b751dfccd598b0814143a6f09}{add\+\_\+transition} (self, end\+\_\+state)
 \begin{DoxyCompactList}\small\item\em Add transition. \end{DoxyCompactList}\item 
-def \hyperlink{classmain_1_1_state_a5503f0a3ccb9e995e3ad07bc219f9cfa}{transition} (self, next\+\_\+state)
+def \hyperlink{classmain_1_1_state_a2721d226e2902e47b6cd803604a4cd06}{remove\+\_\+transition} (self, end\+\_\+state)
+\begin{DoxyCompactList}\small\item\em Remove a transition. \end{DoxyCompactList}\item 
+def \hyperlink{classmain_1_1_state_ab1dc6103b5f39d0f94eefa182da5327c}{transition} (self, next\+\_\+state\+\_\+id)
 \begin{DoxyCompactList}\small\item\em Modify a state transition. \end{DoxyCompactList}\item 
 def \hyperlink{classmain_1_1_state_af824d830f2a410503ffca9fdd267a1c6}{to\+\_\+dictionary} (self)
 \begin{DoxyCompactList}\small\item\em Get the state as a dictionary to persist to Mongo\+DB. \end{DoxyCompactList}\item 
@@ -155,6 +157,25 @@ Get transitions.
 \begin{DoxyReturn}{Returns}
 Dict of transitions 
 \end{DoxyReturn}
+\index{main\+::\+State@{main\+::\+State}!remove\+\_\+transition@{remove\+\_\+transition}}
+\index{remove\+\_\+transition@{remove\+\_\+transition}!main\+::\+State@{main\+::\+State}}
+\subsubsection[{\texorpdfstring{remove\+\_\+transition(self, end\+\_\+state)}{remove_transition(self, end_state)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+State.\+remove\+\_\+transition (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{end\+\_\+state}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_state_a2721d226e2902e47b6cd803604a4cd06}{}\label{classmain_1_1_state_a2721d226e2902e47b6cd803604a4cd06}
+
+
+Remove a transition. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer \\
+\hline
+{\em \hyperlink{classmain_1_1_state}{State}} & The transition to be removed \\
+\hline
+\end{DoxyParams}
 \index{main\+::\+State@{main\+::\+State}!set\+\_\+name@{set\+\_\+name}}
 \index{set\+\_\+name@{set\+\_\+name}!main\+::\+State@{main\+::\+State}}
 \subsubsection[{\texorpdfstring{set\+\_\+name(self, name)}{set_name(self, name)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+State.\+set\+\_\+name (
@@ -195,12 +216,12 @@ dict The \hyperlink{classmain_1_1_state}{State} as a dictionary
 \end{DoxyReturn}
 \index{main\+::\+State@{main\+::\+State}!transition@{transition}}
 \index{transition@{transition}!main\+::\+State@{main\+::\+State}}
-\subsubsection[{\texorpdfstring{transition(self, next\+\_\+state)}{transition(self, next_state)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+State.\+transition (
+\subsubsection[{\texorpdfstring{transition(self, next\+\_\+state\+\_\+id)}{transition(self, next_state_id)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+State.\+transition (
 \begin{DoxyParamCaption}
 \item[{}]{self, }
-\item[{}]{next\+\_\+state}
+\item[{}]{next\+\_\+state\+\_\+id}
 \end{DoxyParamCaption}
-)}\hypertarget{classmain_1_1_state_a5503f0a3ccb9e995e3ad07bc219f9cfa}{}\label{classmain_1_1_state_a5503f0a3ccb9e995e3ad07bc219f9cfa}
+)}\hypertarget{classmain_1_1_state_ab1dc6103b5f39d0f94eefa182da5327c}{}\label{classmain_1_1_state_ab1dc6103b5f39d0f94eefa182da5327c}
 
 
 Modify a state transition. 
@@ -209,7 +230,7 @@ Modify a state transition.
 \begin{DoxyParams}{Parameters}
 {\em self} & The object pointer \\
 \hline
-{\em \hyperlink{classmain_1_1_state}{State}} & The next state in the transition \\
+{\em string} & The id of the next state \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}

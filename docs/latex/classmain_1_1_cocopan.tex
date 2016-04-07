@@ -20,7 +20,7 @@ def \hyperlink{classmain_1_1_cocopan_af17aa6d762d380aa8e3e9d75f906df3b}{set\+\_\
 \begin{DoxyCompactList}\small\item\em Set the Mongo\+DB collection that holds the objects. \end{DoxyCompactList}\item 
 def \hyperlink{classmain_1_1_cocopan_a636f9c9ee0425bdc1c4809d52c92fce5}{set\+\_\+workflow\+\_\+collection} (self, collection)
 \begin{DoxyCompactList}\small\item\em Set the Mongo\+DB collection that holds the workflow documents. \end{DoxyCompactList}\item 
-def \hyperlink{classmain_1_1_cocopan_a1caaa06dd31559d6b24ef8503e3f7013}{new\+\_\+state} (self)
+def \hyperlink{classmain_1_1_cocopan_a1307769651d0df594e76b5007c53c10c}{new\+\_\+state} (self, state\+\_\+id)
 \begin{DoxyCompactList}\small\item\em Create a new workflow state. \end{DoxyCompactList}\item 
 def \hyperlink{classmain_1_1_cocopan_a80ff2078aa4d0329f23afd68f095ecf0}{get\+\_\+state} (self, state\+\_\+id)
 \begin{DoxyCompactList}\small\item\em Retrive a state from the workflow. \end{DoxyCompactList}\item 
@@ -127,11 +127,12 @@ Create the object that will be tracked through the workflow.
 \end{DoxyReturn}
 \index{main\+::\+Cocopan@{main\+::\+Cocopan}!new\+\_\+state@{new\+\_\+state}}
 \index{new\+\_\+state@{new\+\_\+state}!main\+::\+Cocopan@{main\+::\+Cocopan}}
-\subsubsection[{\texorpdfstring{new\+\_\+state(self)}{new_state(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+Cocopan.\+new\+\_\+state (
+\subsubsection[{\texorpdfstring{new\+\_\+state(self, state\+\_\+id)}{new_state(self, state_id)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+Cocopan.\+new\+\_\+state (
 \begin{DoxyParamCaption}
-\item[{}]{self}
+\item[{}]{self, }
+\item[{}]{state\+\_\+id}
 \end{DoxyParamCaption}
-)}\hypertarget{classmain_1_1_cocopan_a1caaa06dd31559d6b24ef8503e3f7013}{}\label{classmain_1_1_cocopan_a1caaa06dd31559d6b24ef8503e3f7013}
+)}\hypertarget{classmain_1_1_cocopan_a1307769651d0df594e76b5007c53c10c}{}\label{classmain_1_1_cocopan_a1307769651d0df594e76b5007c53c10c}
 
 
 Create a new workflow state. 
@@ -139,6 +140,8 @@ Create a new workflow state.
 
 \begin{DoxyParams}{Parameters}
 {\em self} & The object pointer \\
+\hline
+{\em string} & A unique identifier for the state \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}

@@ -16,12 +16,16 @@ def \hyperlink{classmain_1_1_transition_a8dc53c69ee3381f037ec690f53e0fcd4}{set\+
 \begin{DoxyCompactList}\small\item\em Set the trigger list. \end{DoxyCompactList}\item 
 def \hyperlink{classmain_1_1_transition_adb1b399d2905614b0792a6cbfe4f1a92}{trigger\+\_\+add} (self, key)
 \begin{DoxyCompactList}\small\item\em Create a new transition trigger. \end{DoxyCompactList}\item 
+def \hyperlink{classmain_1_1_transition_ae5174ec35a1ddd024f7437941f1a7e8e}{trigger\+\_\+remove} (self, key)
+\begin{DoxyCompactList}\small\item\em Remove a transition trigger. \end{DoxyCompactList}\item 
 def \hyperlink{classmain_1_1_transition_a8c4baad399a3c41f2f6d8c7c74f6db51}{trigger\+\_\+activate} (self, key)
 \begin{DoxyCompactList}\small\item\em Activate a trigger. \end{DoxyCompactList}\item 
 def \hyperlink{classmain_1_1_transition_acbbb9b31789620185ecfd420958457d5}{trigger\+\_\+status} (self, key)
 \begin{DoxyCompactList}\small\item\em Get the status of a trigger. \end{DoxyCompactList}\item 
 def \hyperlink{classmain_1_1_transition_a3d7379857189a9e58da009fc12bc0c04}{condition\+\_\+add} (self, trigger\+\_\+list)
 \begin{DoxyCompactList}\small\item\em Create a new combination of triggers that will activate the transition. \end{DoxyCompactList}\item 
+def \hyperlink{classmain_1_1_transition_a815821a5428745e7aca8eb6c31068605}{condition\+\_\+remove} (self, index)
+\begin{DoxyCompactList}\small\item\em Remove a trigger combination. \end{DoxyCompactList}\item 
 def \hyperlink{classmain_1_1_transition_a54517857aaf67b0ba159306854e9b91f}{get\+\_\+conditions} (self)
 \begin{DoxyCompactList}\small\item\em Get the conditions list. \end{DoxyCompactList}\item 
 def \hyperlink{classmain_1_1_transition_a48a94866892cd2c66cd7e0a6c0c63d82}{set\+\_\+conditions} (self, conditions)
@@ -80,6 +84,25 @@ Create a new combination of triggers that will activate the transition.
 {\em self} & The object pointer \\
 \hline
 {\em list} & List of trigger keys to create the combinations \\
+\hline
+\end{DoxyParams}
+\index{main\+::\+Transition@{main\+::\+Transition}!condition\+\_\+remove@{condition\+\_\+remove}}
+\index{condition\+\_\+remove@{condition\+\_\+remove}!main\+::\+Transition@{main\+::\+Transition}}
+\subsubsection[{\texorpdfstring{condition\+\_\+remove(self, index)}{condition_remove(self, index)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+Transition.\+condition\+\_\+remove (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_transition_a815821a5428745e7aca8eb6c31068605}{}\label{classmain_1_1_transition_a815821a5428745e7aca8eb6c31068605}
+
+
+Remove a trigger combination. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer \\
+\hline
+{\em int} & The index of the condition to remove \\
 \hline
 \end{DoxyParams}
 \index{main\+::\+Transition@{main\+::\+Transition}!from\+\_\+dictionary@{from\+\_\+dictionary}}
@@ -245,6 +268,25 @@ Create a new transition trigger.
 {\em self} & The object pointer \\
 \hline
 {\em string} & Unique trigger key \\
+\hline
+\end{DoxyParams}
+\index{main\+::\+Transition@{main\+::\+Transition}!trigger\+\_\+remove@{trigger\+\_\+remove}}
+\index{trigger\+\_\+remove@{trigger\+\_\+remove}!main\+::\+Transition@{main\+::\+Transition}}
+\subsubsection[{\texorpdfstring{trigger\+\_\+remove(self, key)}{trigger_remove(self, key)}}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+Transition.\+trigger\+\_\+remove (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{key}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_transition_ae5174ec35a1ddd024f7437941f1a7e8e}{}\label{classmain_1_1_transition_ae5174ec35a1ddd024f7437941f1a7e8e}
+
+
+Remove a transition trigger. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer \\
+\hline
+{\em string} & The trigger key \\
 \hline
 \end{DoxyParams}
 \index{main\+::\+Transition@{main\+::\+Transition}!trigger\+\_\+status@{trigger\+\_\+status}}
